@@ -1,0 +1,357 @@
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat);*/
+
+/*basic reset*/
+
+/*form styles*/
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+
+
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 100%;
+   
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+/*inputs*/
+#msform input, #msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+}
+
+#msform input:focus, #msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ee0979;
+    outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in;
+}
+
+/*buttons*/
+#msform .action-button {
+    width: 200px;
+    background: #ef6c57;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #C5C5F1;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+}
+
+/*headings*/
+.fs-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    display: block;
+    font-size: 12px;
+    color: #333;
+    background: white;
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #ef6c57;
+    color: white;
+}
+
+
+/* Not relevant to this form */
+.dme_link {
+    margin-top: 30px;
+    text-align: center;
+}
+.dme_link a {
+    background: #FFF;
+    font-weight: bold;
+    color: #ee0979;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 5px 25px;
+    font-size: 12px;
+}
+
+.dme_link a:hover, .dme_link a:focus {
+    background: #C5C5F1;
+    text-decoration: none;
+}
+#chooseDV{
+    width: 100%;
+   
+}
+#leftbooking{
+    width: 68%;
+    height: 100%;
+ 
+    float:left;
+}
+#rightbooking{
+    width: 30%;
+    float: right;
+    
+}
+#formSL input{
+    width: 50%;
+    height: 40px;
+}
+#formSL , #choosepay, #rules, #rightbooking{
+
+    text-align: left;
+}
+
+#hotline{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    color: #fff;
+    background: #ef6c57;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#hotline p{
+    line-height: 50px;
+
+}
+#hotline p span{
+    font-weight: bold;
+}
+#hotline p:hover{
+    color: #337ab7;
+}
+#titletour{
+    text-align: center;
+    font-size: 18px;
+    color: #ef6c57;
+}
+#infotour{
+    box-shadow:  0 0 15px 1px #666;
+}
+
+#detailinfo{
+    line-height: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+#detailinfo p{
+
+}
+
+#tt100, #tt50{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    line-height: 50px
+}
+#tt100{
+    background: #5cb85c;
+    color: #fff;
+}
+#tt50{
+        color: #000;
+    background: #bfe2bf;
+}
+.tt2{
+       display: none;
+}
+.payType{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 6px;
+    background: #F3EDED;
+    border: 1px solid #ccc;
+    padding: 10px;
+
+
+}
+.paytitle{
+    font-size: 20px;
+    float: left;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+.iconpay{
+    float: right;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
+}
+.choose .collapse{
+    border: 2px dotted #ef6c57;
+}
+.info-form{
+
+    height: 100%;
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+.info-form h5{
+    text-align: left;
+}
+.tbhk thead{
+    background: #ef6c57;
+    text-align: left;
+    color: #fff;
+}
+.tbhk{
+    background: #e5e5e5;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 10px;
+}
+tbody{
+    border: 1px solid #ccc;
+    text-align: left;
+}
+.tbhk tbody tr td input, .gender{
+    width: 300px;
+    height: 30px;
+}
+#tbmytour table thead{
+   background: #ef6c57;
+   color: #fff;
+   
+}
+#tbmytour{
+     margin: 0 auto;
+
+     text-align: center;
+        width: 100%;
+    margin-bottom: 20px;
+}
+#tbmytour tbody tr td{
+    text-align: center;
+}
+#thongtin, #Soluong{
+    width: 50%;
+    float: left;
+  
+    
+}
+#CTDK{
+    width: 100%;
+    height: 250px;
+    overflow-y: scroll;
+    border: 1px solid #000;
+    text-align: left;
+
+}
+
+
+
+
+

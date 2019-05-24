@@ -1,0 +1,87 @@
+#headerCB{
+	width:95%;
+	height:30px; 
+	background: #00BFFF; 
+	margin: 0 auto;
+}
+#bangCB{
+	width: 100%
+	margin: 0 auto;
+}
+.infochuyenbay{
+	width:95%; 
+
+	margin-left: 2.5%;
+	margin-bottom: 0
+}
+.infochuyenbay:hover{
+	background: #FFFACD;
+}
+.hangbay, .sohieu, .khoihanh1, .diemden1, .ngaybay, .giobay, .giacb{
+	float: left;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+	font-weight: bold;
+	color: white;
+}
+.cellhangbay, .cellsohieu, .cellkhoihanh, .celldiemden, .cellngaybay, .cellgiobay, .cellgiacb{
+	float: left;
+
+	border-bottom:  1px solid #000;
+	text-align: center;
+	padding-top: 18px;
+	height: 70px;
+}
+.hangbay, .cellhangbay{
+	width: 18%;
+}
+.sohieu, .cellsohieu{
+	width: 10%;
+}
+.khoihanh1, .cellkhoihanh{
+	width: 14%;
+} 
+.diemden1, .celldiemden{
+	width: 15%;
+} 
+.ngaybay, .cellngaybay{
+	width: 14%;
+} 
+.giobay, .cellgiobay{
+	width: 12%;
+}
+.giacb, .cellgiacb{width: 17%;}
+
+
+.infoHD{
+	width: 100%;
+	padding: 10px 20px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	float: left;
+	margin-bottom: 20px;
+}
+.leftHD, .rightHD{
+	width: 49%;
+	float: left;
+	font-size: 15px;
+}
+.leftHD p, .rightHD p{
+	font-size: 15px;
+
+}
+.DichVu{
+	border: 1px solid #ffaf00;
+	margin-bottom: 30px;
+	width: 100%;
+	float: left;
+
+}
+.DichVu legend{
+	width: 20%;
+
+	font-size: 20px;
+	text-align: center;
+	color: red
+}
